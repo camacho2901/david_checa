@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contacto y agendamiento de citas - Dr. David Checa">
+    <title>Dr. David Checa | Contacto y Turnos</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <header class="main-header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-brain"></i>
+                DR. DAVID CHECA
+            </a>
+
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="index.html">INICIO</a></li>
+                    <li><a href="sobre-mi.html">TRAYECTORIA</a></li>
+                    <li><a href="servicios.html">SERVICIOS</a></li>
+                    <li><a href="blog.html">BLOG CLÍNICO</a></li>
+                    <li><a href="contacto.html" class="active">CONTACTO</a></li>
+                </ul>
+            </nav>
+
+            <button class="mobile-menu-toggle" aria-label="Abrir Menú">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+
+        <div class="mobile-nav-overlay" style="display:none;">
+            <button class="mobile-menu-close"><i class="fas fa-times"></i></button>
+            <a href="index.html">INICIO</a>
+            <a href="sobre-mi.html">TRAYECTORIA</a>
+            <a href="servicios.html">SERVICIOS</a>
+            <a href="blog.html">BLOG CLÍNICO</a>
+            <a href="contacto.html">CONTACTO</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header reveal-up">
+            <div class="container">
+                <h1 class="reveal-up delay-100">SISTEMA DE TURNOS</h1>
+                <p class="reveal-up delay-200">Agende su evaluación clínica o solicite información adicional.</p>
+            </div>
+        </section>
+
+        <section class="section-padding">
+            <div class="container grid-2">
+                <div class="reveal-left">
+                    <h2 class="section-title" style="text-align: left;">INFORMACIÓN <span class="text-primary">DE CONTACTO</span></h2>
+                    
+                    <div class="contact-info-block">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Ubicación</h4>
+                            <p style="color: var(--clr-text-muted);">Oruro, Bolivia</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-block">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Teléfono</h4>
+                            <p style="color: var(--clr-text-muted);"><a href="tel:+59167204989">+591 67204989</a></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-block">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Correo Electrónico</h4>
+                            <p style="color: var(--clr-text-muted);"><a href="mailto:consultas@davidcheca.com.bo">consultas@davidcheca.com.bo</a></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-block">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Horario de Atención</h4>
+                            <p style="color: var(--clr-text-muted);">Lunes a Viernes: 9:00 - 18:00</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-card reveal-right delay-200">
+                    <h3 style="margin-bottom: 30px; color: var(--clr-primary);">FORMULARIO DE CONTACTO</h3>
+                    <form id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                        <div class="form-group">
+                            <label for="nombre">NOMBRE COMPLETO *</label>
+                            <input type="text" id="nombre" name="nombre" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="telefono">TELÉFONO *</label>
+                            <input type="tel" id="telefono" name="telefono" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">CORREO ELECTRÓNICO *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="motivo">MOTIVO DE CONSULTA *</label>
+                            <select id="motivo" name="motivo" required>
+                                <option value="">Seleccione una opción</option>
+                                <option value="consulta-general">Consulta General</option>
+                                <option value="agendar-cita">Agendar Cita</option>
+                                <option value="segunda-opinion">Segunda Opinión</option>
+                                <option value="otros">Otros</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="mensaje">MENSAJE *</label>
+                            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-primary" style="width: 100%;">
+                            ENVIAR MENSAJE <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-padding section-bg">
+            <div class="container">
+                <h2 class="section-title reveal-up">AGENDAMIENTO <span class="text-primary">EN LÍNEA</span></h2>
+                <p class="section-subtitle reveal-up delay-100">Reserve su turno directamente mediante nuestro sistema Calendly.</p>
+                
+                <div class="calendly-inline-widget reveal-up delay-200" data-url="https://calendly.com/YOUR_CALENDLY_LINK" style="min-width:320px;height:700px;"></div>
+                <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+            </div>
+        </section>
+
+        <section class="section-padding">
+            <div class="container">
+                <h2 class="section-title reveal-up">PREGUNTAS <span class="text-primary">FRECUENTES</span></h2>
+                
+                <div style="max-width: 900px; margin: 50px auto 0;">
+                    <div class="faq-item reveal-up delay-100">
+                        <button class="faq-question">
+                            ¿Cómo puedo agendar una consulta?
+                            <i class="fas fa-plus"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Puede agendar mediante nuestro sistema Calendly, llamando al +591 67204989, o enviando un mensaje por WhatsApp.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item reveal-up delay-200">
+                        <button class="faq-question">
+                            ¿Qué debo llevar a mi primera consulta?
+                            <i class="fas fa-plus"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Traiga todos sus estudios médicos previos (resonancias, tomografías, radiografías), resultados de laboratorio y lista de medicamentos actuales.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item reveal-up delay-300">
+                        <button class="faq-question">
+                            ¿Cuánto dura una consulta?
+                            <i class="fas fa-plus"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>La primera consulta dura entre 30 y 45 minutos, tiempo en el cual se realiza una evaluación completa y se responden todas sus dudas.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item reveal-up delay-400">
+                        <button class="faq-question">
+                            ¿Atiende emergencias?
+                            <i class="fas fa-plus"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Para casos de emergencia, comuníquese directamente al número de contacto para coordinar atención inmediata.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand reveal-up">
+                    <h3>Dr. David Checa</h3>
+                    <p>Neurocirugía especializada, microneurocirugía y soporte clínico avanzado en Bolivia.</p>
+                </div>
+                <div class="reveal-up delay-100">
+                    <h4 class="footer-title">MAPA CLÍNICO</h4>
+                    <ul class="footer-links">
+                        <li><a href="sobre-mi.html">Curriculum & Biografía</a></li>
+                        <li><a href="servicios.html">Servicios Médicos</a></li>
+                        <li><a href="contacto.html">Sistema de Turnos</a></li>
+                        <li><a href="blog.html">Revista Neurológica</a></li>
+                    </ul>
+                </div>
+                <div class="reveal-up delay-200">
+                    <h4 class="footer-title">CENTRAL DE CONTACTO</h4>
+                    <ul class="footer-links">
+                        <li><a href="contacto.html"><i class="fas fa-map-marker-alt" style="color: var(--clr-secondary); margin-right: 10px;"></i> Oruro, Bolivia</a></li>
+                        <li><a href="tel:+59167204989"><i class="fas fa-phone" style="color: var(--clr-secondary); margin-right: 10px;"></i> +591 67204989</a></li>
+                        <li><a href="mailto:consultas@davidcheca.com.bo"><i class="fas fa-envelope" style="color: var(--clr-secondary); margin-right: 10px;"></i> consultas@davidcheca.com.bo</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div>
+                    © 2026 Dr. David Checa. Todos los derechos reservados.<br>
+                    Dr. David Checa es un producto de Vision Digital<br>
+                    +591 69597358 • +591 69877877
+                </div>
+                <div><a href="aviso-legal.html">POLÍTICA DE PRIVACIDAD Y AVISO LEGAL</a></div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/59167204989?text=Hola%20Dr.%20Checa%2C%20quisiera%20agendar%20una%20consulta." class="wa-float reveal-scale delay-400" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
