@@ -1,6 +1,7 @@
 # Sistema operativo
 .DS_Store
 Thumbs.db
+desktop.ini
 
 # Editores
 .vscode/
@@ -20,3 +21,20 @@ node_modules/
 # Archivos de respaldo
 backup/
 *.backup
+
+# Archivos de sistema Windows
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Archivos de sistema Mac
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Archivos de sistema Linux
+*~
+.directory
+
+# Archivos de Git
+*.orig

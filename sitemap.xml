@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <!-- Página Principal -->
+  <url>
+    <loc>https://www.davidcheca-neurocirujano.lat/</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <!-- Sobre el Dr. -->
+  <url>
+    <loc>https://www.davidcheca-neurocirujano.lat/sobre-mi.html</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- Servicios -->
+  <url>
+    <loc>https://www.davidcheca-neurocirujano.lat/servicios.html</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- Blog -->
+  <url>
+    <loc>https://www.davidcheca-neurocirujano.lat/blog.html</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Contacto -->
+  <url>
+    <loc>https://www.davidcheca-neurocirujano.lat/contacto.html</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Aviso Legal -->
+  <url>
+    <loc>https://www.davidcheca-neurocirujano.lat/aviso-legal.html</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  
+  <!-- Artículos del Blog -->
+  <url>
+    <loc>https://www.davidcheca-neurocirujano.lat/blog/articulo1.html</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.davidcheca-neurocirujano.lat/blog/articulo2.html</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.davidcheca-neurocirujano.lat/blog/articulo3.html</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+</urlset>

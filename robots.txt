@@ -1,0 +1,43 @@
+# robots.txt para Dr. David Checa - Neurocirujano
+
+User-agent: *
+Allow: /
+
+# Permitir acceso a CSS y JavaScript
+Allow: /css/
+Allow: /js/
+Allow: /images/
+
+# Bloquear archivos de documentación (no necesarios en búsquedas)
+Disallow: /README.md
+Disallow: /CONFIGURACION.md
+Disallow: /MEJORAS.md
+Disallow: /PENDIENTE.md
+Disallow: /RESUMEN.md
+Disallow: /ANALISIS_COMPLETO.md
+Disallow: /CHAT_CONFIG.md
+Disallow: /GUIA_FUNCIONALIDADES.md
+Disallow: /QUE_FALTA.md
+
+# Bloquear archivos de sistema
+Disallow: /.git/
+Disallow: /.gitignore
+
+# Sitemap
+Sitemap: https://www.davidcheca-neurocirujano.lat/sitemap.xml
+
+# Crawl-delay para ser amigable con los servidores
+Crawl-delay: 1
+
+# Configuración específica para bots principales
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Slurp
+Allow: /
+Crawl-delay: 1
