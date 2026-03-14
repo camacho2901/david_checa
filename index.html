@@ -51,6 +51,7 @@
     <main>
         <!-- HERO INSTITUCIONAL -->
         <section class="hero-inst">
+            <canvas id="particles-canvas"></canvas>
             <div class="container">
                 <div class="hero-content reveal-up">
                     <span class="hero-label">Excelencia en Alta Especialidad</span>
@@ -68,17 +69,17 @@
         <div class="info-bar reveal-up delay-100">
             <div class="container info-grid">
                 <div class="info-item reveal-scale delay-100">
-                    <h4 class="counter" data-target="15">0</h4>
+                    <h4><span class="counter" data-target="15" data-suffix="+">0</span></h4>
                     <p style="text-transform: uppercase; font-size: 0.85rem; letter-spacing: 1px;">Años de Especialidad
                     </p>
                 </div>
                 <div class="info-item reveal-scale delay-200">
-                    <h4><span class="counter" data-target="10">0</span>K</h4>
+                    <h4><span class="counter" data-target="10" data-suffix="K+">0</span></h4>
                     <p style="text-transform: uppercase; font-size: 0.85rem; letter-spacing: 1px;">Padecimientos
                         Asistidos</p>
                 </div>
                 <div class="info-item reveal-scale delay-300">
-                    <h4 class="counter" data-target="100">0</h4>
+                    <h4><span class="counter" data-target="100" data-suffix="%">0</span></h4>
                     <p style="text-transform: uppercase; font-size: 0.85rem; letter-spacing: 1px;">Compromiso Analítico
                     </p>
                 </div>
@@ -209,9 +210,33 @@
 
     <!-- WHATSAPP FLOATING BUTTON (PRD Format) -->
     <a href="https://wa.me/59167204989?text=Hola%20Dr.%20Checa%2C%20quisiera%20agendar%20una%20consulta."
-        class="wa-float reveal-scale delay-400" target="_blank" rel="noopener noreferrer">
+        class="wa-float reveal-scale delay-400" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">
         <i class="fab fa-whatsapp"></i>
     </a>
+
+    <!-- CHAT EN VIVO (Tawk.to) -->
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+        var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+        (function(){
+            var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+            s1.async=true;
+            s1.src='https://embed.tawk.to/YOUR_TAWK_ID/default';
+            s1.charset='UTF-8';
+            s1.setAttribute('crossorigin','*');
+            s0.parentNode.insertBefore(s1,s0);
+        })();
+        
+        // Personalización del widget
+        Tawk_API.onLoad = function(){
+            Tawk_API.setAttributes({
+                'name'  : 'Visitante',
+                'email' : '',
+                'hash'  : ''
+            }, function(error){});
+        };
+    </script>
+    <!--End of Tawk.to Script-->
 
     <script src="js/main.js"></script>
 </body>
